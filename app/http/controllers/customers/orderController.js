@@ -58,6 +58,11 @@ function orderController() {
                 return res.render('customers/singleOrder', { order })
             }
             return res.redirect('/')
+        },
+
+        clearCart(req, res) {
+            delete req.session.cart
+            res.redirect('/cart')    
         }
     }
 }

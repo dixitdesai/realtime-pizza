@@ -9,7 +9,7 @@
     "dev": "nodemon server.js",
     "development": "mix",
     "watch": "npx mix watch",
-    "production": ""
+    "production": "npx mix --production"
   },
   "dependencies": {
     "axios": "^0.21.1",
